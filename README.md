@@ -1,23 +1,23 @@
 # GCALTOOLS
-Google Calendar Python Command Line manager using Google OAuth2 API
+Google Calendar Python Command Line manager using Google OAuth2 API used to manage training sessions planning.
 
 ## Install
-Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/sdejongh/gcaltools.git
 ```
 
-Enter the project directory
+### Enter the project directory
 ```bash
 cd gcaltools
 ```
 
-Install requirements
+### Install requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-Install the package
+### Install the package
 ```bash
 pip install .
 ```
@@ -35,7 +35,15 @@ gcaltools --version
 A browser should open and ask for authentication for you Google Account.
 One authenticated, you can now play with `gcaltools`
 
-## Run
+## (Optionnal) Create a attendees.yaml 
+The file is used for the report feature. This allows gcaltools to replace the email of the attendees by a defined display name.
+You can use the provided `attendees.yaml` file as example and put it in `~/.gcaltools/`.
+To use it automatically when generating reports, you can set the default attendees catalog using the following command:
+```
+gcaltools default -a <path to the file>
+```
+
+## Running gcaltools
 ```
 usage: gcaltools [-h] [-v] {remoteauth,add,list,show,report,default,summary,template} ...
 

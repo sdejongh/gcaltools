@@ -43,7 +43,8 @@ class GoogleCalendarManager:
             self._preferences = {
                 'default_calendar': None,
                 'default_duration': 60,
-                'default_timezone': self._calendars[0]['timeZone']
+                'default_timezone': self._calendars[0]['timeZone'],
+                'attendees_catalog': None,
             }
 
     def reload(self) -> None:

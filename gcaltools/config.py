@@ -1,5 +1,5 @@
 # General variables
-__VERSION = "1.0.0"
+__VERSION = "1.0.1"
 
 PERIODS = {
     "am": "09:00",

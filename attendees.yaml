@@ -1,0 +1,6 @@
+# Sample attendees file
+# This file is required (even if empty) to generate reports based on attendees email in event.
+#   Key = email address
+#   Value = Display name
+john.doe@nowhere.com: John Doe
+mr.smith@thematrix.net: Mister Smith
