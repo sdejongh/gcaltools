@@ -1,9 +1,43 @@
 # GCALTOOLS
-Google Calendar Python Command Line manager
+Google Calendar Python Command Line manager using Google OAuth2 API
+
+## Install
+Clone the repository
+```bash
+git clone https://github.com/sdejongh/gcaltools.git
+```
+
+Enter the project directory
+```bash
+cd gcaltools
+```
+
+Install requirements
+```bash
+pip install -r requirements.txt
+```
+
+Install the package
+```bash
+pip install .
+```
+
+## Authenticate
+- Copy the client_secrets.json.example to `~/.gcaltools/client_secrets.json`.
+- Go to your Google API management : https://console.cloud.google.com/
+- Create a new project and create a new OAuth Client ID.
+- Copy the Client ID and the SecretKey and the corresponding fields in your `client_secrets.json` file.
+
+Now you can launch gcaltools
+```
+gcaltools --version
+```
+A browser should open and ask for authentication for you Google Account.
+One authenticated, you can now play with `gcaltools`
 
 ## Run
 ```
-usage: g [-h] [-v] {remoteauth,add,list,show,report,default,summary,template} ...
+usage: gcaltools [-h] [-v] {remoteauth,add,list,show,report,default,summary,template} ...
 
 positional arguments:
   {remoteauth,add,list,show,report,default,summary,template}
